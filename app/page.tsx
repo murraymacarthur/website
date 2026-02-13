@@ -29,33 +29,33 @@ export default function Home() {
             <p className="opacity-50 text-sm mt-1">GENERATIVE EXPERIMENT V.1</p>
           </div>
           <nav className="space-y-2 text-right hidden md:block">
-            <a href="#" className="block hover:line-through transition-all">WORK</a>
-            <a href="#" className="block hover:line-through transition-all">ABOUT</a>
+            <a href="#" className="block hover:line-through transition-all">RESOURCES</a>
             <a href="#" className="block hover:line-through transition-all">CONTACT</a>
+            <a href="#" className="block hover:line-through transition-all">ABOUT</a>
           </nav>
         </header>
 
         <section className="max-w-2xl">
           <h2 className="text-6xl md:text-8xl font-black leading-tight uppercase mb-6">
-            Dreaming in <br />
+            FOCUSING ON <br />
             <span className="text-transparent border-white border-[1px] px-4 rounded-full italic" 
-                  style={{ WebkitTextStroke: "1px white" }}>Shaders</span>
+                  style={{ WebkitTextStroke: "1px white" }}>CREATING</span>
           </h2>
           <button 
             onClick={() => setSeed(Math.random())}
             className="pointer-events-auto flex items-center gap-4 bg-white text-black px-6 py-3 rounded-full font-bold hover:scale-110 transition-transform uppercase italic"
           >
-            Randomize Abstract <RefreshCcw size={18} />
+            Randomize <RefreshCcw size={18} />
           </button>
         </section>
 
         <footer className="flex justify-between items-end pointer-events-auto">
           <div className="flex gap-8 text-xs uppercase opacity-50">
-            <span>© 2026 YOUR_NAME</span>
-            <span>BUILT WITH NOISE & LIGHT</span>
+            <span>© 2026 MURRAY MACARTHUR</span>
+            <span>BUILT WITH ELECTRONS, PHOTONS & NEURONS</span>
           </div>
           <div className="flex items-center gap-2 group cursor-pointer">
-            <span className="group-hover:mr-4 transition-all uppercase italic font-bold">Scroll to Explore</span>
+            <span className="group-hover:mr-4 transition-all uppercase italic font-bold">Scroll to Play</span>
             <MoveRight className="animate-pulse" />
           </div>
         </footer>
