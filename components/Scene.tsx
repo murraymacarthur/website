@@ -1,3 +1,18 @@
+import { useScroll } from "@react-three/drei";
+
+export default function Scene({ seed }: { seed: number }) {
+  const meshRef = useRef<THREE.Mesh>(null!);
+  const scroll = useScroll(); // Accesses the scroll data
+
+  useFrame((state) => {
+    // scroll.offset is a number from 0 to 1
+    const offset = scroll.offset;
+    
+    // Use the scroll offset to change rotation or distortion
+    meshRef.current.rotation.y = state.clock.getElapsedTime() + offset * 5;
+    shaderArgs.uniforms.uTime.value = state.clock.getElapsedTime() + offset * 2;
+  });
+
 "use client";
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
