@@ -25,7 +25,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col justify-between h-full p-8 md:p-16 pointer-events-none">
         <header className="flex justify-between items-start pointer-events-auto">
           <div>
-            <h1 className="text-4xl font-bold tracking-tighter uppercase italic">ABSTRACT.OS</h1>
+            <h1 className="text-4xl font-bold tracking-tighter uppercase italic">MURRAY MACARTHUR</h1>
             <p className="opacity-50 text-sm mt-1">GENERATIVE EXPERIMENT V.1</p>
           </div>
           <nav className="space-y-2 text-right hidden md:block">
