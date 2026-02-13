@@ -11,11 +11,14 @@ export default function Home() {
     <main className="relative h-screen w-full bg-[#0a0a0a] text-white overflow-hidden font-mono">
       {/* 3D Background */}
       <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
-          <Suspense fallback={null}>
-            <Scene seed={seed} />
-          </Suspense>
-        </Canvas>
+<Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
+  <Suspense fallback={null}>
+    {/* pages: 3 means the scroll length is 3 screens long */}
+    <ScrollControls pages={3} damping={0.2}>
+      <Scene seed={seed} />
+    </ScrollControls>
+  </Suspense>
+</Canvas>
       </div>
 
       {/* Overlay UI */}
