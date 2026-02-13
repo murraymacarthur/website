@@ -13,7 +13,9 @@ export default function Home() {
       <div className="absolute inset-0 z-0">
         <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
           <Suspense fallback={null}>
-            <Scene seed={seed} />
+            <ScrollControls pages={3} damping={0.2}>
+              <Scene seed={seed} />
+            </ScrollControls>
           </Suspense>
         </Canvas>
       </div>
